@@ -1,0 +1,129 @@
+{"natures":
+  [
+    {
+      "name": "Hardy",
+      "increase": "-",
+      "decrease": "-"
+    },
+    {
+      "name": "Lonely",
+      "increase": "attack",
+      "decrease": "defense"
+    },
+    {
+      "name": "Brave",
+      "increase": "attack",
+      "decrease": "speed"
+    },
+    {
+      "name": "Adamant",
+      "increase": "attack",
+      "decrease": "sp. attack"
+    },
+    {
+      "name": "Naughty",
+      "increase": "attack",
+      "decrease": "sp. Defense"
+    },
+    {
+      "name": "Bold",
+      "increase": "defense",
+      "decrease": "attack"
+    },
+    {
+      "name": "Docile",
+      "increase": "-",
+      "decrease": "-"
+    },
+    {
+      "name": "Relaxed",
+      "increase": "defense",
+      "decrease": "speed"
+    },
+    {
+      "name": "Impish",
+      "increase": "defense",
+      "decrease": "sp. attack"
+    },
+    {
+      "name": "Lax",
+      "increase": "defense",
+      "decrease": "sp. Defense"
+    },
+    {
+      "name": "Timid",
+      "increase": "speed",
+      "decrease": "attack"
+    },
+    {
+      "name": "Hasty",
+      "increase": "speed",
+      "decrease": "defense"
+    },
+    {
+      "name": "Serious",
+      "increase": "-",
+      "decrease": "-"
+    },
+    {
+      "name": "Jolly",
+      "increase": "speed",
+      "decrease": "sp. attack"
+    },
+    {
+      "name": "Naive",
+      "increase": "speed",
+      "decrease": "sp. defense"
+    },
+    {
+      "name": "Modest",
+      "increase": "sp. attack",
+      "decrease": "attack"
+    },
+    {
+      "name": "Mild",
+      "increase": "sp. attack",
+      "decrease": "defense"
+    },
+    {
+      "name": "Quiet",
+      "increase": "sp. attack",
+      "decrease": "speed"
+    },
+    {
+      "name": "Bashfull",
+      "increase": "-",
+      "decrease": "-"
+    },
+    {
+      "name": "Rash",
+      "increase": "sp. attack",
+      "decrease": "sp. defense"
+    },
+    {
+      "name": "Calm",
+      "increase": "sp. Defense",
+      "decrease": "attack"
+    },
+    {
+      "name": "Gentle",
+      "increase": "sp. Defense",
+      "decrease": "defense"
+    },
+    {
+      "name": "Sassy",
+      "increase": "sp. Defense",
+      "decrease": "speed"
+    },
+    {
+      "name": "Careful",
+      "increase": "sp. Defense",
+      "decrease": "sp. attack"
+    },
+    {
+      "name": "Quirky",
+      "increase": "-",
+      "decrease": "-"
+    }
+  ]
+}

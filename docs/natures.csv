@@ -1,0 +1,26 @@
+name,increase,decrease
+Hardy,-,-
+Lonely,attack,defense
+Brave,attack,speed
+Adamant,attack,sp. attack
+Naughty,attack,sp. Defense
+Bold,defense,attack
+Docile,-,-
+Relaxed,defense,speed
+Impish,defense,sp. attack
+Lax,defense,sp. Defense
+Timid,speed,attack
+Hasty,speed,defense
+Serious,-,-
+Jolly,speed,sp. attack
+Naive,speed,sp. defense
+Modest,sp. attack,attack
+Mild,sp. attack,defense
+Quiet,sp. attack,speed
+Bashfull,-,-
+Rash,sp. attack,sp. defense
+Calm,sp. Defense,attack
+Gentle,sp. Defense,defense
+Sassy,sp. Defense,speed
+Careful,sp. Defense,sp. attack
+Quirky,-,-

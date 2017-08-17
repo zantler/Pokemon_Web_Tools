@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/damage.js"></script>
+	<script type="text/javascript" src="js/pokemon.js"></script>	
+	<script type="text/javascript" src="js/setStats.js"></script>
+	<script type="text/javascript" src="js/setHp.js"></script>
+	<script type="text/javascript" src="js/nature.js"></script>
+	<header>
+		<div class="container">
+			<h1>Pokemon Calculator</h1>		
+		</div>
+	</header>
+	
+	<div class="container">
+		<section class="row">
+			<div id="catch">
+				<h2>Catch Rate Calculator</h2>
+				<table>
+					<tr>
+						<td>
+							Pokemon:
+						</td>
+						<td>
+							<select id="poke" onchange="setStats()"></select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Level:
+						</td>
+						<td>
+							<input type="number" id="level" min="1" max="100" size="5" onchange="setHp()">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Base Hp	 
+						</td>
+						<td>
+							<input type="text" id="baseHp" size="5" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Max Hp	 
+						</td>
+						<td>
+							<input id="maxHp" size="5" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Current Hp
+						</td>
+						<td>
+							<input type="text" id="currentHp" size="5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Rate:
+						</td>
+						<td>
+							<input type="text" id="rate" size="5" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Ball:
+						</td>
+						<td>
+							<select id="ball">
+								<option value="PokeBall">Poke Ball</option>
+								<option value="GreatBall">Great Ball</option>
+								<option value="UltraBall">Ultra Ball</option>
+								<option value="FriendBall">Friend Ball</option>
+								<option value="SportBall">Sport Ball</option>
+								<option value="HealBall">Heall Ball</option>
+								<option value="CherishBall">Cherish Ball</option>
+								<option value="PremierBall">Premier Ball</option>
+								<option value="LuxuryBall">Luxury Ball</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Status:
+						</td>
+						<td>
+							<select id="status">
+								<option value="2">Sleep - Freeze</option>
+								<option value="1.5">Paralyze - Poison - Burn</option>
+								<option value="1">Other</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Catch Rate:
+						</td>
+						<td>
+							<input type="text" id="answer" size="5" disabled />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="javascript:calc();">Calculate</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="statistic">
+				<h2>Statistic Calculator</h2>
+				<table>
+					<tr>
+						<td>
+							Pokemon:
+						</td>
+						<td>
+							<select id="poke2"></select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Level:
+						</td>
+						<td>
+							<input type="number" id="level2" min="1" max="100" size="5">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nature:
+						</td>
+						<td>
+							<select id="nature" ></select>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td></td>
+						<td><center>Base</center></td>
+						<td><center>Ev's</center></td>
+						<td></td>
+						<td><center>Iv's</center></td>
+						<td><center>Total</center></td>
+					</tr>
+					<tr>
+						<td >HP</td>
+						<td><input id="hp" size="5"></input></td>
+						<td><input id="hpEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="hpIv" size="5"></input></td>
+						<td><input id="hpTotal" size="5" disabled></input></td>
+					</tr>
+					<tr>
+						<td>Attack</td>
+						<td><input id="atk" size="5"></input></td>
+						<td><input id="atkEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="atkIv" size="5"></input></td>
+						<td><input id="atkTotal" size="5" disabled></input></td>
+					</tr>
+					<tr>				
+						<td>Defense</td>
+						<td><input id="def" size="5"></input></td>
+						<td><input id="defEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="defIv" size="5"></input></td>
+						<td><input id="defTotal" size="5"disabled></input></td>
+					</tr>
+					<tr>
+						<td>Sp. Attack</td>
+						<td><input id="spatk" size="5"></input></td>
+						<td><input id="spatkEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="spatkIv" size="5"></input></td>
+						<td><input id="spatkTotal" size="5" disabled></input></td>
+					</tr>
+					<tr>
+						<td>Sp. Defense</td>
+						<td><input id="spdef" size="5"></input></td>
+						<td><input id="spdefEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="spdefIv" size="5"></input></td>
+						<td><input id="spdefTotal" size="5" disabled></input></td>
+					</tr>
+					<tr>
+						<td>Speed</td>
+						<td><input id="spd" size="5"></input></td>
+						<td><input id="spdEv" size="5"></input></td>
+						<td><input type ="range" id="hpEvRange"></input></td>
+						<td><input id="spdIv" size="5"></input></td>
+						<td><input id="spdTotal"  size="5" disabled></input></td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="">Calculate</button>
+						</td>
+					</tr>
+				</table>
+			</div>		
+		</section>
+		<section class="row">
+			
+		</section>
+			
+	</div>		
+</body>
+</html>

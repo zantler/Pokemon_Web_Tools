@@ -14,6 +14,8 @@
 	<script type="text/javascript" src="js/setStats.js"></script>
 	<script type="text/javascript" src="js/setHp.js"></script>
 	<script type="text/javascript" src="js/nature.js"></script>
+	<script type="text/javascript" src="js/setAllStats.js"></script>
+	<script type="text/javascript" src="js/TotalStats.js"></script>
 	<header>
 		<div class="container">
 			<h1>Pokemon Calculator</h1>		
@@ -23,7 +25,7 @@
 	<div class="container">
 		<section class="row">
 			<div id="catch">
-				<h2>Catch Rate Calculator</h2>
+				<h2>Catch Calculator</h2>
 				<table>
 					<tr>
 						<td>
@@ -126,7 +128,7 @@
 							Pokemon:
 						</td>
 						<td>
-							<select id="poke2"></select>
+							<select id="poke2" onchange="setAllStats()"></select>
 						</td>
 					</tr>
 					<tr>
@@ -151,61 +153,61 @@
 						<td></td>
 						<td><center>Base</center></td>
 						<td><center>Ev's</center></td>
-						<td></td>
+						<!-- <td></td> -->
 						<td><center>Iv's</center></td>
 						<td><center>Total</center></td>
 					</tr>
 					<tr>
 						<td >HP</td>
-						<td><input id="hp" size="5"></input></td>
-						<td><input id="hpEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="hpIv" size="5"></input></td>
+						<td><input id="hp" size="5" disabled></input></td>
+						<td><input id="hpEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange" value="0"></input></td> -->
+						<td><input id="hpIv" size="5" value="0"></input></td>
 						<td><input id="hpTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Attack</td>
-						<td><input id="atk" size="5"></input></td>
-						<td><input id="atkEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="atkIv" size="5"></input></td>
+						<td><input id="atk" size="5" disabled></input></td>
+						<td><input id="atkEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
+						<td><input id="atkIv" size="5" value="0"></input></td>
 						<td><input id="atkTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>				
 						<td>Defense</td>
-						<td><input id="def" size="5"></input></td>
-						<td><input id="defEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="defIv" size="5"></input></td>
+						<td><input id="def" size="5" disabled></input></td>
+						<td><input id="defEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
+						<td><input id="defIv" size="5" value="0"></input></td>
 						<td><input id="defTotal" size="5"disabled></input></td>
 					</tr>
 					<tr>
 						<td>Sp. Attack</td>
-						<td><input id="spatk" size="5"></input></td>
-						<td><input id="spatkEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="spatkIv" size="5"></input></td>
+						<td><input id="spatk" size="5" disabled></input></td>
+						<td><input id="spatkEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
+						<td><input id="spatkIv" size="5" value="0"></input></td>
 						<td><input id="spatkTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Sp. Defense</td>
-						<td><input id="spdef" size="5"></input></td>
-						<td><input id="spdefEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="spdefIv" size="5"></input></td>
+						<td><input id="spdef" size="5" disabled></input></td>
+						<td><input id="spdefEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
+						<td><input id="spdefIv" size="5" value="0"></input></td>
 						<td><input id="spdefTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Speed</td>
-						<td><input id="spd" size="5"></input></td>
-						<td><input id="spdEv" size="5"></input></td>
-						<td><input type ="range" id="hpEvRange"></input></td>
-						<td><input id="spdIv" size="5"></input></td>
+						<td><input id="spd" size="5" disabled></input></td>
+						<td><input id="spdEv" size="5" value="0"></input></td>
+						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
+						<td><input id="spdIv" size="5" value="0"></input></td>
 						<td><input id="spdTotal"  size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>
-							<button type="button" onclick="">Calculate</button>
+							<button type="button" onclick="javascript:totalStats();">Calculate</button>
 						</td>
 					</tr>
 				</table>

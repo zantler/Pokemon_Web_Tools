@@ -1,15 +1,29 @@
+@font-face{
+	font-family: pokemonFont;
+	src: url("../font/pokemon-font.ttf");
+}
+
 body {
 	background: #f0f0f0;
 }
+
 header {
-	background: #ee1515;
+		background: #ee1515;
+		font-family: pokemonFont;
+		padding: 10px;
 }
 
 #catch, #statistic {
+	font-family: pokemonFont;
+	font-size: 1em;
 	background: #f0f0f0;
 	margin: 20px;
 	padding: 20px;
 	border-radius: 20px;
     border: 2px solid;
     padding: 5px;
+}
+
+h2 {
+	font-size: 1.5em
 }

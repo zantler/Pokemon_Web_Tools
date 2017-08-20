@@ -6,27 +6,27 @@
       "decrease": "-"
     },
     {
-      "name": "Lonely",
+      "name": "Lonely (+atk/-def)",
       "increase": "attack",
       "decrease": "defense"
     },
     {
-      "name": "Brave",
+      "name": "Brave(+atk/-spd)",
       "increase": "attack",
       "decrease": "speed"
     },
     {
-      "name": "Adamant",
+      "name": "Adamant (+atk/-sp. atk)",
       "increase": "attack",
       "decrease": "sp. attack"
     },
     {
       "name": "Naughty",
-      "increase": "attack",
-      "decrease": "sp. Defense"
+      "increase": "attack (+atk/-sp.def)",
+      "decrease": "sp. defense"
     },
     {
-      "name": "Bold",
+      "name": "Bold (+def/-atk)",
       "increase": "defense",
       "decrease": "attack"
     },
@@ -36,27 +36,27 @@
       "decrease": "-"
     },
     {
-      "name": "Relaxed",
+      "name": "Relaxed (+def/-spd)",
       "increase": "defense",
       "decrease": "speed"
     },
     {
-      "name": "Impish",
+      "name": "Impish (+def/-sp. atk)",
       "increase": "defense",
       "decrease": "sp. attack"
     },
     {
-      "name": "Lax",
+      "name": "Lax (+def/-sp. def)",
       "increase": "defense",
-      "decrease": "sp. Defense"
+      "decrease": "sp. defense"
     },
     {
-      "name": "Timid",
+      "name": "Timid (+spd/-atk)",
       "increase": "speed",
       "decrease": "attack"
     },
     {
-      "name": "Hasty",
+      "name": "Hasty (+spd/-def)",
       "increase": "speed",
       "decrease": "defense"
     },
@@ -66,27 +66,27 @@
       "decrease": "-"
     },
     {
-      "name": "Jolly",
+      "name": "Jolly (+spd/-sp. atk)",
       "increase": "speed",
       "decrease": "sp. attack"
     },
     {
-      "name": "Naive",
+      "name": "Naive (+spd/-sp. def)",
       "increase": "speed",
       "decrease": "sp. defense"
     },
     {
-      "name": "Modest",
+      "name": "Modest (+sp. atk/-atk)",
       "increase": "sp. attack",
       "decrease": "attack"
     },
     {
-      "name": "Mild",
+      "name": "Mild (+sp. atk/-def)",
       "increase": "sp. attack",
       "decrease": "defense"
     },
     {
-      "name": "Quiet",
+      "name": "Quiet (+sp. atk/-spd)",
       "increase": "sp. attack",
       "decrease": "speed"
     },
@@ -96,28 +96,28 @@
       "decrease": "-"
     },
     {
-      "name": "Rash",
+      "name": "Rash (+sp. atk/-sp. def)",
       "increase": "sp. attack",
       "decrease": "sp. defense"
     },
     {
-      "name": "Calm",
-      "increase": "sp. Defense",
+      "name": "Calm (+sp. def/-atk)",
+      "increase": "sp. defense",
       "decrease": "attack"
     },
     {
-      "name": "Gentle",
-      "increase": "sp. Defense",
+      "name": "Gentle (+sp. def/-def)",
+      "increase": "sp. defense",
       "decrease": "defense"
     },
     {
-      "name": "Sassy",
-      "increase": "sp. Defense",
+      "name": "Sassy (+sp. def/-spd)",
+      "increase": "sp. defense",
       "decrease": "speed"
     },
     {
-      "name": "Careful",
-      "increase": "sp. Defense",
+      "name": "Careful (+sp. def/-sp. atk)",
+      "increase": "sp. defense",
       "decrease": "sp. attack"
     },
     {

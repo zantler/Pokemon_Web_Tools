@@ -10,13 +10,10 @@ function totalStats() {
 				if((nature.localeCompare(x.name)) == 0)
 				{
 					y=[x.increase];
-					console.log(y[0]);
 					y.push(x.decrease);
-					console.log(y[1]);
 					break;
 				}
 			}	
-        console.log(y);
 
         var hp = document.getElementById("hp");
         var hpValue = parseFloat(hp.value);
@@ -71,7 +68,7 @@ function totalStats() {
         {
             answerAtk = ((((atkValue*2)+atkIvValue+(atkEvValue/4))*levelValue/100)+5)*1.1;
         }
-        else if(y[0] == "attack")
+        else if(y[1] == "attack")
         {
             answerAtk = ((((atkValue*2)+atkIvValue+(atkEvValue/4))*levelValue/100)+5)*0.9;
         }
@@ -80,5 +77,65 @@ function totalStats() {
             answerAtk = ((((atkValue*2)+atkIvValue+(atkEvValue/4))*levelValue/100)+5);
         }
         document.getElementById("atkTotal").value = parseInt(answerAtk|0).toString();
+
+        var answerDef;
+        if(y[0] == "defense")
+        {
+            answerDef = ((((defValue*2)+defIvValue+(defEvValue/4))*levelValue/100)+5)*1.1;
+        }
+        else if(y[1] == "defense")
+        {
+            answerDef = ((((defValue*2)+defIvValue+(defEvValue/4))*levelValue/100)+5)*0.9;
+        }
+        else
+        {
+            answerDef = ((((defValue*2)+defIvValue+(defEvValue/4))*levelValue/100)+5);
+        }
+        document.getElementById("defTotal").value = parseInt(answerDef|0).toString();
+
+        var answerSpatk;
+        if(y[0] == "sp. attack")
+        {
+            answerSpatk = ((((spatkValue*2)+spatkIvValue+(spatkEvValue/4))*levelValue/100)+5)*1.1;
+        }
+        else if(y[1] == "sp. attack")
+        {
+            answerSpatk = ((((spatkValue*2)+spatkIvValue+(spatkEvValue/4))*levelValue/100)+5)*0.9;
+        }
+        else
+        {
+            answerSpatk = ((((spatkValue*2)+spatkIvValue+(spatkEvValue/4))*levelValue/100)+5);
+        }
+        document.getElementById("spatkTotal").value = parseInt(answerSpatk|0).toString();
+
+        var answerSpdef;
+        if(y[0] == "sp. defense")
+        {
+            answerSpdef = ((((spdefValue*2)+spdefIvValue+(spdefEvValue/4))*levelValue/100)+5)*1.1;
+        }
+        else if(y[1] == "sp. defense")
+        {
+            answerSpdef = ((((spdefValue*2)+spdefIvValue+(spdefEvValue/4))*levelValue/100)+5)*0.9;
+        }
+        else
+        {
+            answerSpdef = ((((spdefValue*2)+spdefIvValue+(spdefEvValue/4))*levelValue/100)+5);
+        }
+        document.getElementById("spdefTotal").value = parseInt(answerSpdef|0).toString();
+
+        var answerSpd;
+        if(y[0] == "speed")
+        {
+            answerSpd = ((((spdValue*2)+spdIvValue+(spdEvValue/4))*levelValue/100)+5)*1.1;
+        }
+        else if(y[1] == "speed")
+        {
+            answerSpd = ((((spdValue*2)+spdIvValue+(spdEvValue/4))*levelValue/100)+5)*0.9;
+        }
+        else
+        {
+            answerSpd = ((((spdValue*2)+spdIvValue+(spdEvValue/4))*levelValue/100)+5);
+        }
+        document.getElementById("spdTotal").value = parseInt(answerSpd|0).toString();
     });   
 }

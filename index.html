@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Pkmon Tools</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,9 +16,10 @@
 	<script type="text/javascript" src="js/nature.js"></script>
 	<script type="text/javascript" src="js/setAllStats.js"></script>
 	<script type="text/javascript" src="js/TotalStats.js"></script>
+	<script type="text/javascript" src="js/totalEV.js"></script>
 	<header>
 		<div class="container">
-			<h1>Pokemon Calculator</h1>		
+			<h1>Pokemon Tools</h1>		
 		</div>
 	</header>
 	
@@ -40,7 +41,7 @@
 							Level:
 						</td>
 						<td>
-							<input type="number" id="level" min="1" max="100" size="5" onchange="setHp()">
+							<input type="number" id="level" min="1" max="100" size="5" value="1" onchange="setHp()">
 						</td>
 					</tr>
 					<tr>
@@ -136,7 +137,7 @@
 							Level:
 						</td>
 						<td>
-							<input type="number" id="level2" min="1" max="100" size="5">
+							<input type="number" id="level2" min="1" max="100" size="5" value="1">
 						</td>
 					</tr>
 					<tr>
@@ -160,50 +161,57 @@
 					<tr>
 						<td >HP</td>
 						<td><input id="hp" size="5" disabled></input></td>
-						<td><input id="hpEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="hpEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange" value="0"></input></td> -->
-						<td><input id="hpIv" size="5" value="0"></input></td>
+						<td><input id="hpIv" size="5" value="31"></input></td>
 						<td><input id="hpTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Attack</td>
 						<td><input id="atk" size="5" disabled></input></td>
-						<td><input id="atkEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="atkEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="atkIv" size="5" value="0"></input></td>
+						<td><input id="atkIv" size="5" value="31"></input></td>
 						<td><input id="atkTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>				
 						<td>Defense</td>
 						<td><input id="def" size="5" disabled></input></td>
-						<td><input id="defEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="defEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="defIv" size="5" value="0"></input></td>
+						<td><input id="defIv" size="5" value="31"></input></td>
 						<td><input id="defTotal" size="5"disabled></input></td>
 					</tr>
 					<tr>
 						<td>Sp. Attack</td>
 						<td><input id="spatk" size="5" disabled></input></td>
-						<td><input id="spatkEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="spatkEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spatkIv" size="5" value="0"></input></td>
+						<td><input id="spatkIv" size="5" value="31"></input></td>
 						<td><input id="spatkTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Sp. Defense</td>
 						<td><input id="spdef" size="5" disabled></input></td>
-						<td><input id="spdefEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="spdefEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spdefIv" size="5" value="0"></input></td>
+						<td><input id="spdefIv" size="5" value="31"></input></td>
 						<td><input id="spdefTotal" size="5" disabled></input></td>
 					</tr>
 					<tr>
 						<td>Speed</td>
 						<td><input id="spd" size="5" disabled></input></td>
-						<td><input id="spdEv" size="5" value="0"></input></td>
+						<td><input type="number" min="0" max="252" id="spdEv" size="5" value="0" onchange="totalEV()"></input></td>
 						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spdIv" size="5" value="0"></input></td>
+						<td><input id="spdIv" size="5" value="31"></input></td>
 						<td><input id="spdTotal"  size="5" disabled></input></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Remain</td>
+						<td><input id="totalEV" size="5" value="508" disabled></input></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
 						<td>
@@ -212,11 +220,7 @@
 					</tr>
 				</table>
 			</div>		
-		</section>
-		<section class="row">
-			
-		</section>
-			
+		</section>			
 	</div>		
 </body>
 </html>

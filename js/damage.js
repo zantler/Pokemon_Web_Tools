@@ -24,5 +24,5 @@ function calc() {
     }
 
     var answer = (((3*maxHpValue)-(2*currentHpValue))*ball*rateValue)/(3*maxHpValue)*statusValue;
-    document.getElementById("answer").value = answer.toString();
+    document.getElementById("answer").value = parseInt(answer|0).toString()+"%";
 }

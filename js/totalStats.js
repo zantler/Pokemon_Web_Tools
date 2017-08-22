@@ -1,7 +1,7 @@
 
 function totalStats() {
 	
-    $.getJSON (	 '../docs/natures.json', function(data) {
+    $.getJSON ('./docs/natures.json', function(data) {
         var y = new Array(2);
     	var nature = document.getElementById("nature").value;
 		  for( var i = 0; i< data.natures.length; i++)

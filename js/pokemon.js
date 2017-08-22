@@ -1,4 +1,4 @@
-$.getJSON('../docs/datos.json', function(data) {
+$.getJSON('./docs/datos.json', function(data) {
 	var listItems = "<option selected disabled class='hideoption'>Select your Pokemon</option>";
 	
 	for( var i = 0; i< data.pokemon.length; i++)

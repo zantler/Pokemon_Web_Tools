@@ -1,6 +1,6 @@
 function setStats()
 {
-    $.getJSON('../docs/datos.json', function(data) {
+    $.getJSON('./docs/datos.json', function(data) {
 		var listItems = [];
 		var pokemon = document.getElementById("poke").value;
 	    for( var i = 0; i< data.pokemon.length; i++)

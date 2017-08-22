@@ -1,4 +1,4 @@
-$.getJSON('../docs/natures.json', function(data) {
+$.getJSON('./docs/natures.json', function(data) {
 	var listItems = "<option selected disabled class='hideoption'>Select your Nature</option>";
 	
 	for( var i = 0; i< data.natures.length; i++)

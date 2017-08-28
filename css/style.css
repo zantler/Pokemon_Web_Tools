@@ -13,6 +13,10 @@ header {
 		padding: 10px;
 }
 
+div {
+	font-family: pokemonFont;
+}
+
 #catch, #statistic {
 	font-size: 1em;
 	background: #f0f0f0;
@@ -23,10 +27,11 @@ header {
     padding: 5px;
 }
 
-h2 {
-	font-size: 1.5em
+#instructions {
+	font-size: 0.75em;
 }
 
-div {
-	font-family: pokemonFont;	
+h2 {
+	font-size: 1.5em;
 }
+

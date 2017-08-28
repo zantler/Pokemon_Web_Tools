@@ -14,7 +14,6 @@ header {
 }
 
 #catch, #statistic {
-	font-family: pokemonFont;
 	font-size: 1em;
 	background: #f0f0f0;
 	margin: 20px;
@@ -26,4 +25,8 @@ header {
 
 h2 {
 	font-size: 1.5em
+}
+
+div {
+	font-family: pokemonFont;	
 }

@@ -25,7 +25,7 @@
 	
 	<div class="container">
 		<section class="row">
-			<div id="catch">
+			<div id="catch" class="col-xs-12 col-sm-6 col-md-4">
 				<h2>Catch Calculator</h2>
 				<table>
 					<tr>
@@ -100,9 +100,9 @@
 						</td>
 						<td>
 							<select id="status">
+								<option value="1">None</option>
 								<option value="2">Sleep - Freeze</option>
 								<option value="1.5">Paralyze - Poison - Burn</option>
-								<option value="1">Other</option>
 							</select>
 						</td>
 					</tr>
@@ -121,7 +121,7 @@
 					</tr>
 				</table>
 			</div>
-			<div id="statistic">
+			<div id="statistic" clas="col-xs-12 col-sm-6 col-md-8">
 				<h2>Statistic Calculator</h2>
 				<table>
 					<tr>
@@ -220,7 +220,27 @@
 					</tr>
 				</table>
 			</div>		
-		</section>			
+		</section>
+		<div class="row">
+			<div class="col-sm-12 col-md-8">
+				<h2>Catch Rate Instructions</h2>
+				<p>
+					<ul>
+						<li>Select the pokemon you want to catch.</li>
+						<li>Set a level for the wild pokemon, automatucally the total Hp value will be displayed in the Max Hp box.</li>
+						<li>You need to stimate the los Hp of the wild pokemon because the game doesn't show you the exact value.
+						<br>
+						For exmple, Bulbasaur level 50 has a max Hp of 105 and in battle it lost quarter of its life, so the current Hp will be 78.</li>
+						<li>Each poke ball has a diferent catch rate, so select the ball of your preference. Some poke balls are missing, they will be added soon.</li>
+						<li>The status condition of the wild pokemon afeects the capture, try to apply one of them (poison, sleep, paralysis, freeze, burn);otherwise, the catch will not be affeced.</li>
+						<li>Calculate!</li>
+					</ul>
+				</p>
+			</div>	
+			<div class="col-sm-12 col-md-4">
+				<img src="img/pikachu.jpg" alt="Pikachu Saying Hi!">
+			</div>
+		</div>	
 	</div>		
 </body>
 </html>

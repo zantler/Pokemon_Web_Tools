@@ -60,8 +60,9 @@ function totalStats() {
         var level = document.getElementById("level2");
         var levelValue = parseFloat(level.value);
 
-        var answerHp =(((hpValue*2)+hpIvValue+(hpEvValue/4))*levelValue/100)+levelValue+10;
-        document.getElementById("hpTotal").value = parseInt(answerHp|0).toString(); 
+        var name = document.getElementById("poke2").value;
+        var answerHP = (name === "Shedinja")? 1:(((hpValue*2)+hpIvValue+(hpEvValue/4))*levelValue/100)+levelValue+10;
+        document.getElementById("hpTotal").value = answerHP.toString(); 
 
         var answerAtk;
         if(y[0] == "attack")

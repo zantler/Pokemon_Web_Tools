@@ -26,7 +26,7 @@
 	
 	<div class="container">
 		<div class="row">
-			<div id="catch" class="col-xs-12 col-sm-6 col-md-4">
+			<div id="catch" class="col-md-4 col-sm-12">
 				<h2>Catch Calculator</h2>
 				<table>
 					<tr>
@@ -122,7 +122,7 @@
 					</tr>
 				</table>
 			</div>
-			<div id="statistic" clas="col-xs-12 col-sm-6 col-md-8">
+			<div id="statistic" class="col-md-6 col-sm-12">
 				<h2>Statistic Calculator</h2>
 				<table>
 					<tr>
@@ -153,64 +153,64 @@
 				<table>
 					<tr>
 						<td></td>
-						<td><center>Base</center></td>
-						<td><center>Ev's</center></td>
+						<td class="subtitle">Base</td>
+						<td class="subtitle">Ev's</td>
 						<!-- <td></td> -->
-						<td><center>Iv's</center></td>
-						<td><center>Total</center></td>
+						<td class="subtitle">Iv's</td>
+						<td class="subtitle">Total</td>
 					</tr>
 					<tr>
 						<td >HP</td>
-						<td><input id="hp" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="hpEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange" value="0"></input></td> -->
-						<td><input id="hpIv" size="5" value="31"></input></td>
-						<td><input id="hpTotal" size="5" disabled></input></td>
+						<td><input id="hp" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="hpEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange" value="0"></td> -->
+						<td><input id="hpIv" size="5" value="31"></td>
+						<td><input id="hpTotal" size="5" disabled></td>
 					</tr>
 					<tr>
 						<td>Attack</td>
-						<td><input id="atk" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="atkEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="atkIv" size="5" value="31"></input></td>
-						<td><input id="atkTotal" size="5" disabled></input></td>
+						<td><input id="atk" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="atkEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange"></td> -->
+						<td><input id="atkIv" size="5" value="31"></td>
+						<td><input id="atkTotal" size="5" disabled></td>
 					</tr>
 					<tr>				
 						<td>Defense</td>
-						<td><input id="def" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="defEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="defIv" size="5" value="31"></input></td>
-						<td><input id="defTotal" size="5"disabled></input></td>
+						<td><input id="def" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="defEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange"></td> -->
+						<td><input id="defIv" size="5" value="31"></td>
+						<td><input id="defTotal" size="5"disabled></td>
 					</tr>
 					<tr>
 						<td>Sp. Attack</td>
-						<td><input id="spatk" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="spatkEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spatkIv" size="5" value="31"></input></td>
-						<td><input id="spatkTotal" size="5" disabled></input></td>
+						<td><input id="spatk" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="spatkEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange"></td> -->
+						<td><input id="spatkIv" size="5" value="31"></td>
+						<td><input id="spatkTotal" size="5" disabled></td>
 					</tr>
 					<tr>
 						<td>Sp. Defense</td>
-						<td><input id="spdef" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="spdefEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spdefIv" size="5" value="31"></input></td>
-						<td><input id="spdefTotal" size="5" disabled></input></td>
+						<td><input id="spdef" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="spdefEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange"></td> -->
+						<td><input id="spdefIv" size="5" value="31"></td>
+						<td><input id="spdefTotal" size="5" disabled></td>
 					</tr>
 					<tr>
 						<td>Speed</td>
-						<td><input id="spd" size="5" disabled></input></td>
-						<td><input type="number" min="0" max="252" id="spdEv" size="5" value="0" onchange="totalEV()"></input></td>
-						<!-- <td><input type ="range" id="hpEvRange"></input></td> -->
-						<td><input id="spdIv" size="5" value="31"></input></td>
-						<td><input id="spdTotal"  size="5" disabled></input></td>
+						<td><input id="spd" size="5" disabled></td>
+						<td><input type="number" min="0" max="252" id="spdEv" size="5" value="0" onchange="totalEV()"></td>
+						<!-- <td><input type ="range" id="hpEvRange"></td> -->
+						<td><input id="spdIv" size="5" value="31"></td>
+						<td><input id="spdTotal"  size="5" disabled></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td>Remain</td>
-						<td><input id="totalEV" size="5" value="508" disabled></input></td>
+						<td><input id="totalEV" size="5" value="508" disabled></td>
 						<td></td>
 						<td></td>
 					</tr>
@@ -223,7 +223,7 @@
 			</div>		
 		</div>
 		<div class="row">
-			<div class="col-sm-12 col-md-8" id="instructions">
+			<div class="col-sm-12 col-md-8 instructions">
 				<h2>Catch Rate Instructions</h2>
 				<p>
 					<ul>
@@ -246,7 +246,7 @@
 			<div class="col-sm-12 col-md-5">
 				<img src="img/eevee.jpg" alt="Attacking eevee">
 			</div>
-			<div class="col-sm-12 col-md-7" id="instructions">
+			<div class="col-sm-12 col-md-7 instructions">
 				<h2>Statistic Calculator Instructions</h2>
 				<p>
 					<ul>
